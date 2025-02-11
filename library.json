@@ -1,0 +1,41 @@
+{
+  "name": "LCD",
+  "version": "1.0.0",
+  "description": "LCD I2C library for PlatformIO",
+  "keywords": [
+    "lcd",
+    "i2c",
+    "display"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robotutor-tech/lcd.git"
+  },
+  "authors": [
+    {
+      "name": "Shivam Rajput",
+      "email": "shivam.rajput@robotutortech.com",
+      "url": "https://www.robotutortech.com/profiles/leaders/shivam-rajput",
+      "maintainer": true
+    },
+    {
+      "name": "Robotutor tech",
+      "email": "software-support@robotutortech.com",
+      "url": "https://www.robotutortech.com",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "frameworks": [
+    "arduino"
+  ],
+  "platforms": [
+    "espressif8266",
+    "espressif32",
+    "atmelavr"
+  ],
+  "dependencies": {
+    "Wire": "*",
+    "LiquidCrystal_I2C": "*"
+  }
+}
