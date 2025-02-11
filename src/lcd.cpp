@@ -1,6 +1,6 @@
-#include <lcd.hpp>
+#include <lcd.h>
 
-LCD::LCD(uint8_t lcd_cols, uint8_t lcd_rows) : lcd(0x27, lcd_cols, lcd_rows)
+LCD::LCD(uint8_t lcd_address, uint8_t lcd_cols, uint8_t lcd_rows) : lcd(lcd_address, lcd_cols, lcd_rows)
 {
   this->rows = lcd_rows;
   this->cols = lcd_cols;
@@ -56,5 +56,5 @@ void LCD::clear()
 
 void LCD::println(int number)
 {
-  this.println(String(number));
+  this->println(String(number));
 }

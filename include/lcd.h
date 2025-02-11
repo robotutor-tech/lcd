@@ -14,7 +14,8 @@ private:
 
 public:
   LCD() : LCD(16, 2) {};
-  LCD(uint8_t lcd_cols, uint8_t lcd_rows);
+  LCD(uint8_t lcd_cols, uint8_t lcd_rows) : LCD(0x27, lcd_cols, lcd_rows) {};
+  LCD(uint8_t lcd_address, uint8_t lcd_cols, uint8_t lcd_rows);
   void println(String text);
   void println(int text);
   void clear();
